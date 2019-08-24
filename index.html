@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <!-- cropper js -->
+    <link href="/cropperjs/cropper1.5.5.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Customize preview for Cropper</h1>
+        <div class="row">
+
+                <label>Image File:</label><br/>
+                <input type="file" id="imageLoader" name="imageLoader"/>
+
+                <div>
+                    <canvas id="canvas" width="0" height="0">
+                        Your browser does not support the HTML5 canvas element.
+                    </canvas>
+                </div>
+
+        </div>
+
+        <hr>
+    </div>
+
+    <script type="text/javascript" src="/jquery/jquery-3.1.1.js"></script>
+    <script src="/cropperjs/cropper1.5.5.js"></script>
+    <script src="/js/cropperjs_controller.js"></script>
+</body>
+</html>
