@@ -3,11 +3,10 @@ window.onload = function () {
 
     var Cropper = window.Cropper;
     var URL = window.URL || window.webkitURL;
-    var container = document.querySelector('.img-container');
-    var image = container.getElementsByTagName('img').item(0);
+    var image = document.getElementById('cropper_image');
     var options = {
         aspectRatio: 16 / 9,
-        viewMode: 1
+        viewMode: 2
     };
     var cropper = new Cropper(image, options);
     var uploadedImageType = 'image/jpeg';
