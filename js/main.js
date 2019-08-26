@@ -29,11 +29,6 @@ window.onload = function () {
         };
 
         inputImage.onchange = function () {
-            let cropImageButtonRow = document.getElementById("cropImageButtonRow");
-
-            if (cropImageButtonRow.style.display === '')
-                cropImageButtonRow.style.display = 'block';
-
             var files = this.files;
             var file;
 
