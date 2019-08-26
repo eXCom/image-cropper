@@ -15,8 +15,19 @@ window.onload = function () {
 
     // Import image
     var inputImage = document.getElementById('inputImage');
+    var cropImage = document.getElementById('cropImageLabel');
 
     if (URL) {
+        // Crop image
+        cropImage.onclick = function () {
+            var croppedImageSrc = cropper.getCroppedCanvas({
+                imageSmoothingQuality: 'high'
+            });
+
+            cropper.destroy();
+            image.src = croppedImageSrc.toDataURL('image/jpeg', 1);
+        };
+
         inputImage.onchange = function () {
             let cropImageButtonRow = document.getElementById("cropImageButtonRow");
 
